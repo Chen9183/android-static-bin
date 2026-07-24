@@ -88,10 +88,8 @@ Single-file static binaries for Android arm64. No containers, no temp files, jus
 
 各工具保留原有许可证：
 
-- ffmpeg：LGPL 2.1+（构建参数见 `build/` 目录）
+- ffmpeg：LGPL 2.1+（构建参数暂无）
 - 其余工具：MIT / Apache-2.0 / BSD
-
-详见 `LICENSES/` 目录。
 
 ---
 
