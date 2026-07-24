@@ -82,3 +82,17 @@ Single-file static binaries for Android arm64. No containers, no temp files, jus
 
 **zstd** — Zstandard 压缩/解压（高压缩比）
 `zstd 文件`                             压缩（生成 .zst）; `zstd -d 文件.zst` 解压; `zstd -b 文件` 基准测试压缩比
+
+
+## 许可证说明
+
+各工具保留原有许可证：
+
+- ffmpeg：LGPL 2.1+（构建参数见 `build/` 目录）
+- 其余工具：MIT / Apache-2.0 / BSD
+
+详见 `LICENSES/` 目录。
+
+---
+
+*三天、约 1.3 亿 tokens 训练出来的安卓工具链。容器没用上，但认知到位了。*
