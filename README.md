@@ -1,42 +1,49 @@
 android-static-bin
 
-单文件、零依赖的 arm64 静态二进制工具集，给 Android 用。
-
-设计理念
-
-- 单文件，不依赖任何 
-".so"
-- 不携带外部数据文件（magic、规则库等全部焊进 ELF）
-- 不 fork 进程，不产生临时文件
-
-安装
-
-去 Releases (https://github.com/Chen9183/android-static-bin/releases) 下载需要的工具。
-
+单文件 · 零依赖 · 静态编译 · 给 Android 用
 扔进 
 "/data/local/tmp" 或 
 "/system/bin"，
-"chmod +x" 后直接使用。
+"chmod +x"，直接跑。
 
-Magisk 模块可直接在 Releases 页面下载 zip 包，Magisk Manager 刷入后重启。
-如若模块未发布，请自行加载
-更新日志
+✨ 设计理念
 
-所有版本更新记录在 CHANGELOG.md。
+- 单文件 — 不依赖任何 
+".so"，每个工具都是独立的 ELF
+- 零外部数据 — magic 数据库、规则库等全部编译嵌入 ELF 体内
+- 不 fork — 降低内存开销，避免 SELinux 审计
+- 无临时文件 — 不产生中间文件，不污染存储
+
+📦 安装
+
+👉 前往 Releases (https://github.com/Chen9183/android-static-bin/releases) 下载所需工具。
+
+方式 操作
+临时使用 下载 → 扔进 
+"/data/local/tmp" → 
+"chmod +x" → 直接用
+全局安装 下载 → 扔进 
+"/system/bin/" → 
+"chmod 755"
+Magisk 模块 下载 zip → Magisk Manager 刷入 → 重启生效
+
+📝 更新日志
+
+完整记录见 CHANGELOG.md
 
 最新版本及下载：Releases (https://github.com/Chen9183/android-static-bin/releases)
 
-许可证
+📄 许可证
 
-各工具保留其原有上游许可证（GPL / LGPL / Apache / MIT / BSD）。
+各工具保留其原有上游许可证（GPL / LGPL / Apache / MIT / BSD）
 
-仓库源码采用 MIT。
+仓库源码（README、构建脚本等）采用 MIT
 
-构建方式见 
-"build/" 目录。
+构建方式详见 
+"build/" 目录
 
-问题反馈
+🐛 问题反馈
 
-Issues (https://github.com/Chen9183/android-static-bin/issues)
+遇到问题？👉 Issues (https://github.com/Chen9183/android-static-bin/issues)
 
-Last updated: 2026-07
+提交时请附带：设备型号 · Android 版本 · 工具名称与版本 · 完整报错
