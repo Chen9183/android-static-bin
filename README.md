@@ -90,4 +90,6 @@
 ## 问题反馈
 
 > 👉 **[Issues](https://github.com/Chen9183/android-static-bin/issues)**
+>
+BUILD
 > Build with very many tokens
