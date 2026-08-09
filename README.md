@@ -8,10 +8,10 @@
 
 <!-- 副标题：加粗 + 引用，视觉上小一号 -->
 <p align="center">
-  <b>单文件 · 零依赖 · 静态编译 · 给 Android 用</b>
+  <b>单文件 · 零依赖 · 静态融合 · 扔进去就能跑</b>
 </p>
 
-<!-- Badge 行：彩色小标签，自带视觉重量 -->
+<!-- Badge 行：你原来的，一个不动 -->
 <p align="center">
   <a href="https://github.com/Chen9183/android-static-bin/releases"><img src="https://img.shields.io/badge/release-latest-blue?style=for-the-badge"></a>
   <a href="https://github.com/Chen9183/android-static-bin/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge"></a>
@@ -25,46 +25,42 @@
 <!-- H2：章节大标题 -->
 ## 这是什么？
 
-<!-- 引用块：视觉上缩进+左边框，天然"小一号旁白" -->
-> 15 个为 Android arm64 静态编译的单文件命令行工具。
+<!-- 引用块：懒得数版 -->
+> 把一堆 arm64 静态工具焊进一个 ELF 里了。
 > 扔进目录、`chmod +x`、直接跑。
-> 不依赖系统库，不需要 proot，不产生临时文件，不 fork 进程。
+> 不依赖系统库，不需要 proot，不 fork 进程，Android 非 root 也能喘气。
 
-<!-- H3：比 H2 小一号 -->
 ### 一句话总结
 
-<!-- b 加粗 + small 缩小，行内大小字对比 -->
-<b>单文件。</b> <small>每个工具都是独立的静态 ELF。</small><br>
-<b>零依赖。</b> <small>不依赖任何 .so，不需要外部数据文件。</small><br>
-<b>直接跑。</b> <small>扔到任何 arm64 安卓设备都能用。</small>
+<b>单文件。</b> <small>一个 inode 装下三套命令箱，塞太满懒得数。</small><br>
+<b>零依赖。</b> <small>magic / AI / 动画 / 游戏全嵌体内，自己 `list` 看存货。</small><br>
+<b>到处跑。</b> <small>Recovery / adb shell / Shizuku / 普通 Linux 终端一把梭。</small>
 
 ---
 
 ## 设计理念
 
-<!-- 表格：行内 b 加粗制造大小对比 -->
 | 原则 | 说明 |
 |------|------|
-| **单文件** | 每个工具都是独立的静态 ELF，不依赖任何 `.so` |
-| **零外部数据** | magic 数据库、规则库等全部编译嵌入 ELF 体内 |
-| **不 fork** | 降低内存开销，避免 SELinux 审计 |
-| **无临时文件** | 不产生中间文件，不污染存储 |
+| **单 ELF 架构** | 拒绝散装二进制，一个文件就是半个迷你发行版 |
+| **三层执行兜底** | memfd / O_TMPFILE / 普通路径，Android 拦不住 |
+| **自清场** | 跑完不甩临时垃圾，tmpfs 干干净净 |
+| **盒子不分家** | 轻量 / 原生 / POSIX 三套箱随调随用 |
+| **有电就跑** | 修盘、摸鱼、跑模型、打方块，一个文件全管 |
 
 ---
 
 ## 安装
 
-<!-- H3 子标题 -->
 ### 三种方式
 
 | 方式 | 适合场景 |
 |------|---------|
 | **临时使用** | 试试看、偶尔用 → 扔进 `/data/local/tmp` |
-| **全局安装** | 长期使用 → 扔进 `/system/bin/` |
+| **全局安装** | 长期使用 → 扔进 `$PATH` 或 `/system/bin` |
 | **Magisk 模块** | 开机自动生效 → 下载 zip 刷入后重启 |
 
-<!-- 引用块当"旁白小字" -->
-> 👉 前往 **[Releases](https://github.com/Chen9183/android-static-bin/releases)** 下载所需工具。
+> 👉 前往 **[Releases](https://github.com/Chen9183/android-static-bin/releases)** 下载。
 
 ---
 
@@ -94,10 +90,3 @@
 ## 问题反馈
 
 > 👉 **[Issues](https://github.com/Chen9183/android-static-bin/issues)**
->
-> 提交时请附带：设备型号 · Android 版本 · 工具名称与版本 · 完整报错输出
-
----
-
-<!-- sub 标签：最小的脚注字 -->
-<sub>Last updated: 2026-07 · Built with too many tokens 🎒</sub>
