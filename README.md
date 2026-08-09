@@ -67,7 +67,7 @@
 ## 更新日志
 
 > 完整记录见 **[CHANGELOG.md](CHANGELOG.md)**
->
+>(虽然完整记录大概率也没有)
 > 最新版本及下载：**[Releases](https://github.com/Chen9183/android-static-bin/releases)**
 
 ---
@@ -90,3 +90,4 @@
 ## 问题反馈
 
 > 👉 **[Issues](https://github.com/Chen9183/android-static-bin/issues)**
+> Build with very many tokens
