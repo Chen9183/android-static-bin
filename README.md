@@ -93,3 +93,12 @@
 >
 BUILD
 > Build with very many tokens
+
+
+
+
+
+
+##关于以后
+以后这个仓库的mytools/mt就已经停留在v5.0.0了
+但我还会继续发布一些好玩的安卓静态编译的elf的
