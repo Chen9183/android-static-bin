@@ -59,19 +59,19 @@
 
 **Release 内所有第三方二进制**：各自遵守上游许可证，**包含但不限于**：
 
-MIT License
-Apache License 2.0
-BSD License (2-Clause / 3-Clause)
-ISC License
-GNU GPL v2 / v3
-GNU LGPL v2.1 / v3
-GNU AGPL v3
-Mozilla Public License (MPL) 2.0
-Eclipse Public License (EPL)
-Unlicense / Public Domain
-Creative Commons (CC) 系列
-各上游项目的自定义或专有开源许可证
-其他 OSI 批准的开源许可证
+MIT License    
+Apache License 2.0    
+BSD License (2-Clause / 3-Clause)    
+ISC License    
+GNU GPL v2 / v3    
+GNU LGPL v2.1 / v3    
+GNU AGPL v3    
+Mozilla Public License (MPL) 2.0    
+Eclipse Public License (EPL)    
+Unlicense / Public Domain    
+Creative Commons (CC) 系列    
+各上游项目的自定义或专有开源许可证    
+其他 OSI 批准的开源许可证    
 
 
 
