@@ -41,11 +41,11 @@
 
 ### 🚀 用法
 
-sh
+**sh**
 
-chmod +x 文件名
+*chmod +x 文件名*
 
-./文件名 --help        # 或 -h / -V，自己试
+***./文件名 --help        # 或 -h / -V，自己试***
 
 
 需要 CA 证书、API Key、terminfo 等外部配置的，**去查对应工具的上游文档**。  
@@ -59,13 +59,20 @@ chmod +x 文件名
 
 **Release 内所有第三方二进制**：各自遵守上游许可证，**包含但不限于**：
 
-MIT · Apache-2.0 · BSD (2/3-Clause) · ISC
+MIT License
+Apache License 2.0
+BSD License (2-Clause / 3-Clause)
+ISC License
+GNU GPL v2 / v3
+GNU LGPL v2.1 / v3
+GNU AGPL v3
+Mozilla Public License (MPL) 2.0
+Eclipse Public License (EPL)
+Unlicense / Public Domain
+Creative Commons (CC) 系列
+各上游项目的自定义或专有开源许可证
+其他 OSI 批准的开源许可证
 
-GPL v2 / v3 · LGPL v2.1 / v3 · AGPL v3
-
-MPL-2.0 · EPL · Unlicense / Public Domain
-
-CC 系列 · 各项目自定义开源协议 · 其他 OSI 批准许可
 
 
 > ⚠️ 不逐一列“工具名 ↔ 协议”映射。  
